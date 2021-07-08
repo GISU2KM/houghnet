@@ -48,9 +48,9 @@ def generate_3lines(num_points_per_cluster: int,
     return x, y
 
 
-def generate_2p1l(num_points_per_cluster=1000,
-                  jitter_factor=0.,
-                  noise_fraction=0.,
+def generate_2p1l(num_points_per_cluster: int,
+                  jitter_factor: float,
+                  noise_fraction: float,
                   ) -> Tuple[numpy.ndarray, numpy.ndarray]:
     cluster_dims = numpy.array(
         [
